@@ -16,8 +16,12 @@
     gap: 20px;
 }
 
-#textStart1{
+.textStart1{
     font-size: 3em;
+}
+
+.textStart2, .reducere2{
+    display: none;
 }
 
 #secImg, #secImg3, #secImg2{
@@ -25,7 +29,7 @@
 }
 
 #secParagraf{
-    width: 700px;
+    max-width: 700px;
     margin: 20px 0px;
     text-align: justify;
 }
@@ -73,14 +77,8 @@
     justify-content: center;
 }
 
-#reducere{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    background-color: #fc2929;
+.reducere{
+    width: 15em;
 }
 
 #reducereText{
@@ -119,4 +117,39 @@
     font-family: 'Gilroy', sans-serif;
 
     transition: transform 0.3s ease;
+}
+
+@media(max-width: 450px){
+    .textStart1, .reducere{
+        display: none;
+    }
+    .reducere2{
+        display: flex;
+        width: 6em;
+    }
+    .textStart2{
+        display: flex;
+        font-size: 1.7em;
+    }
+    #secImg, #secImg3, #secImg2{
+        width: 18em;
+    }
+    #foodContainer{
+        flex-direction: row;
+    }
+    #desContainer{
+        flex-direction: column;
+    }
+    #boxSpec{
+        width: 80px;
+        height: 30px;
+    }
+    #gText{
+        font-size: 0.9em;
+    }
+    #secText{
+        display: flex;
+        justify-content: center;
+        font-size: 2.7em;
+    }
 }
