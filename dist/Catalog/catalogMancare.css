@@ -5,13 +5,17 @@
   font-style: normal;
 }
 
+*{
+    text-decoration: none;
+}
+
 body{
     background-color: black;
     font-family: 'Gilroy', sans-serif;
     margin: 0px;
 }
 
-#mancare{
+.mancare{
     position: relative;
     display: flex;
     cursor: pointer;
@@ -26,7 +30,7 @@ body{
     transition: transform 0.3s ease;
 }
 
-#mancare:hover{
+.mancare:hover{
     transform: scale(1.1);
 }
 
