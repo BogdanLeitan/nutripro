@@ -148,11 +148,8 @@
     #secImg, #secImg3, #secImg2{
         width: 18em;
     }
-    #foodContainer{
-        flex-direction: row;
-    }
     #desContainer{
-        flex-direction: column;
+        display: none;
     }
     #boxSpec{
         width: 80px;
@@ -164,6 +161,10 @@
     #secText{
         display: flex;
         justify-content: center;
-        font-size: 2.7em;
+        font-size: 2.2em;
+        gap: 10px;
+    }
+    #pretVechi, #pretNou{
+        font-size: 2.2em;
     }
 }

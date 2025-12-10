@@ -11,11 +11,16 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     font-family: 'Gilroy', sans-serif;
+    margin: 0px;
+}
+
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
     height: 100vh;
     gap: 50px;
@@ -50,4 +55,20 @@ body{
 #title{
     color: white;
     font-size: 4em;
+}
+
+@media(max-width: 650px){
+    #cardContainer{
+        gap: 0px;
+    }
+    #mancare, #sala{
+        width: 15em;
+        height: 20em;
+    }
+    #title{
+        font-size: 2em;
+    }
+    #mancareImg, #salaImg{
+        width: 10em;
+    }
 }
