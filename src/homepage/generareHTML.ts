@@ -48,7 +48,7 @@ let descriere: string[] = [
 ];
 
 for(let i: number = 0; i < 18; i++){
-    if(fileName == `${imgPath[i]}.webp`){
+    if(fileName == `produs=${imgPath[i]}.webp`){
         produsImg.src = `../../assets/poze mancare/${imgPath[i]}.webp`;
         TitliProdus.textContent = titlu[i];
         descriereProdus.textContent = descriere[i];

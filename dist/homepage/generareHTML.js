@@ -41,7 +41,7 @@ let descriere = [
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti in earum repellat velit quasi debitis, dolore libero, commodi voluptas nostrum provident facere cum harum soluta nesciunt architecto ad ea quia, praesentium quis quam tempora quas neque. At voluptatum, odit dignissimos quam doloribus excepturi minus asperiores quisquam ab ut velit assumenda."
 ];
 for (let i = 0; i < 18; i++) {
-    if (fileName == `${imgPath[i]}.webp`) {
+    if (fileName == `produs=${imgPath[i]}.webp`) {
         produsImg.src = `../../assets/poze mancare/${imgPath[i]}.webp`;
         TitliProdus.textContent = titlu[i];
         descriereProdus.textContent = descriere[i];
