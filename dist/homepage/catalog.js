@@ -1,6 +1,6 @@
 "use strict";
 let a = document.querySelectorAll(".mancare");
-let isDebugg = true;
+let isDebugg = false;
 a.forEach(function (elem) {
     elem.addEventListener("click", () => {
         const img = elem.children[0];
