@@ -1,5 +1,5 @@
-let a = document.querySelectorAll<HTMLElement>(".mancare");
-let newPath: string = ""; 
+let a = document.querySelectorAll<HTMLElement>(".mancare"); 
+let isDebugg: boolean = true;
 
 a.forEach(function(elem: HTMLElement){
     elem.addEventListener("click", () => {
@@ -10,6 +10,7 @@ a.forEach(function(elem: HTMLElement){
 });
 
 function extragereDinPath(path: string){
+    let newPath: string = "";
     let countBars: number = 0;
     let isWriting: boolean = false;
 
@@ -23,7 +24,12 @@ function extragereDinPath(path: string){
         }
     }
 
-    const encodedPath = encodeURIComponent(newPath);
+    //const encodedPath = encodeURIComponent(newPath);
+    let encodedPath: string = newPath;
 
-    window.location.href = `/nutripro/dist/explore/produs.html?${encodedPath}`;
+    if(isDebugg){
+        window.location.href = `produs.html?${encodedPath}`;
+    } else{
+        window.location.href = `/nutripro/dist/explore/produs.html?${encodedPath}`;
+    }
 }

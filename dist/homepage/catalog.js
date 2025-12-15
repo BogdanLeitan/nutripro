@@ -1,6 +1,6 @@
 "use strict";
 let a = document.querySelectorAll(".mancare");
-let newPath = "";
+let isDebugg = true;
 a.forEach(function (elem) {
     elem.addEventListener("click", () => {
         const img = elem.children[0];
@@ -9,6 +9,7 @@ a.forEach(function (elem) {
     });
 });
 function extragereDinPath(path) {
+    let newPath = "";
     let countBars = 0;
     let isWriting = false;
     for (let i = 0; i < path.length; i++) {
@@ -22,6 +23,12 @@ function extragereDinPath(path) {
             newPath += path[i];
         }
     }
-    const encodedPath = encodeURIComponent(newPath);
-    window.location.href = `/nutripro/dist/explore/produs.html?${encodedPath}`;
+    //const encodedPath = encodeURIComponent(newPath);
+    let encodedPath = newPath;
+    if (isDebugg) {
+        window.location.href = `produs.html?${encodedPath}`;
+    }
+    else {
+        window.location.href = `/nutripro/dist/explore/produs.html?${encodedPath}`;
+    }
 }
