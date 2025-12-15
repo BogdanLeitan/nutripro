@@ -24,8 +24,7 @@ function extragereDinPath(path: string){
         }
     }
 
-    //const encodedPath = encodeURIComponent(newPath);
-    let encodedPath: string = newPath;
+    const encodedPath: string = encodeURIComponent(newPath);
 
     if(isDebugg){
         window.location.href = `produs.html?${encodedPath}`;
