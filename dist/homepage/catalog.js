@@ -15,5 +15,5 @@ function extragereDinPath(path) {
     } else {
         window.location.href = `/nutripro/dist/explore/produs.html?${fileName}`;
     }*/
-    window.location.href = `/nutripro/dist/explore/produs.html?produs=${fileName}`;
+    window.location.href = `/nutripro/dist/Catalog/produs.html?produs=${fileName}`;
 }
