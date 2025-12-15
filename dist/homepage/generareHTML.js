@@ -3,17 +3,9 @@ let url = window.location.href;
 let countBars = 0;
 let isWriting = false;
 let x = "";
-for (let i = 0; i < url.length; i++) {
-    if (url[i] == "%") {
-        countBars += 1;
-    }
-    if (countBars == 2) {
-        isWriting = true;
-    }
-    if (isWriting) {
-        x += url[i];
-    }
-}
+let n = url.split("/").pop();
+const fileName = n.split("?").pop();
+console.log(fileName);
 let produsImg = document.getElementById("produsImg");
 let TitliProdus = document.getElementById("TitluProdus");
 let descriereProdus = document.getElementById("descriereProdus");
@@ -49,7 +41,7 @@ let descriere = [
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti in earum repellat velit quasi debitis, dolore libero, commodi voluptas nostrum provident facere cum harum soluta nesciunt architecto ad ea quia, praesentium quis quam tempora quas neque. At voluptatum, odit dignissimos quam doloribus excepturi minus asperiores quisquam ab ut velit assumenda."
 ];
 for (let i = 0; i < 18; i++) {
-    if (x == `%2F${imgPath[i]}.webp`) {
+    if (fileName == `${imgPath[i]}.webp`) {
         produsImg.src = `../../assets/poze mancare/${imgPath[i]}.webp`;
         TitliProdus.textContent = titlu[i];
         descriereProdus.textContent = descriere[i];

@@ -4,15 +4,10 @@ let countBars: number = 0;
 let isWriting: boolean = false;
 let x: string = "";
 
-for(let i:number = 0; i < url.length; i++){
-    if(url[i] == "%"){
-        countBars += 1;
-    } if(countBars == 2){
-        isWriting = true;
-    } if(isWriting){
-        x += url[i];
-    }
-}
+let n = url.split("/").pop()!;
+const fileName = n.split("?").pop()!;
+
+console.log(fileName);
 
 let produsImg = document.getElementById("produsImg") as HTMLImageElement;
 let TitliProdus = document.getElementById("TitluProdus") as HTMLElement;
@@ -53,7 +48,7 @@ let descriere: string[] = [
 ];
 
 for(let i: number = 0; i < 18; i++){
-    if(x == `%2F${imgPath[i]}.webp`){
+    if(fileName == `${imgPath[i]}.webp`){
         produsImg.src = `../../assets/poze mancare/${imgPath[i]}.webp`;
         TitliProdus.textContent = titlu[i];
         descriereProdus.textContent = descriere[i];
