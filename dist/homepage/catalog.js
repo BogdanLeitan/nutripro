@@ -23,5 +23,5 @@ function extragereDinPath(path) {
         }
     }
     const encodedPath = encodeURIComponent(newPath);
-    window.location.href = `produs.html?${encodedPath}`;
+    window.location.href = `/nutripro/dist/explore/produs.html?${encodedPath}`;
 }
