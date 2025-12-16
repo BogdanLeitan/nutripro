@@ -11,5 +11,9 @@ a.forEach(function(elem: HTMLElement){
 
 function extragereDinPath(path: string){
     const fileName = path.split("/").pop()!;
-    window.location.href = `/nutripro/dist/Catalog/produs.html?produs=${fileName}`;
+    if(isDebugg){
+        window.location.href = `produs.html?produs=${fileName}`;
+    } else{
+        window.location.href = `/nutripro/dist/Catalog/produs.html?produs=${fileName}`;
+    }
 }
