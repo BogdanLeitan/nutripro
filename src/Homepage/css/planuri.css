@@ -1,0 +1,133 @@
+#Sectiune3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    min-height: 1000px;
+}
+
+#plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#easy, #medium, #hard{
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #5353fc;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#medium{
+    transform: scale(1.1);
+    border: 3px solid #5353fc;
+}
+
+#textContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plansText{
+    margin: 0px;
+    margin-bottom: 150px;
+}
+
+#plansTitle{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 5em;
+}
+
+#box{
+    position: absolute;
+    padding: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: #5353fc;
+    transform: scale(1.1);
+    border: 3px solid #5353fc;
+    top: 2267px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+h4{
+    margin: 0px;
+}
+
+#alege{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+#alege2{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #585858;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+#alege:hover, #alege2:hover{
+    transform: scale(0.95);
+}
+
+#plansP{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#priceP{
+    font-size: 1.7rem;
+}
+
+#beneficiiP{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#imgP{
+    width: 15px;
+    height: 15px;
+}
+
+#beneficiiParagraf{
+    margin: 0px;
+}
+
+@media(max-width: 650px){
+    #plansTitle{
+        text-align: center;
+        font-size: 4em;
+    }
+    #plansText{
+        text-align: center;
+        width: 280px;
+    }
+    #medium{
+        transform: scale(1.0);
+    }
+}

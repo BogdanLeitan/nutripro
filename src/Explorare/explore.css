@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../assets/Gilroy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+*{
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0px;
+}
+
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100vh;
+    gap: 50px;
+}
+
+#mancare, #sala{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    height: 40em;
+    border-radius: 15px;
+    border: 2px solid #790df3;
+    width: 30em;
+    transition: transform 0.3s ease;
+}
+
+#mancare:hover, #sala:hover{
+    transform: scale(1.1);
+    border: 4px solid #790df3;
+}
+
+#mancareImg{
+    width: 25em;
+}
+
+#salaImg{
+    width: 25em;
+}
+
+#title{
+    color: white;
+    font-size: 4em;
+}
+
+@media(max-width: 650px){
+    #cardContainer{
+        gap: 0px;
+    }
+    #mancare, #sala{
+        width: 15em;
+        height: 20em;
+    }
+    #title{
+        font-size: 2em;
+    }
+    #mancareImg, #salaImg{
+        width: 10em;
+    }
+}

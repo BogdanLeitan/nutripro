@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle"></title>
+    <title>Nutro-Pro Explore</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="../../src/Homepage/css/footer.css">
+    <link rel="stylesheet" href="../../src/Homepage/css/header.css">
 </head>
 <body>
-    <link rel="stylesheet" href="produs.css">
-    <link rel="stylesheet" href="../../src/Homepage/css/header.css">
-    <link rel="stylesheet" href="../../src/Homepage/css/footer.css">
-    
     <!--Header-->
     <header>
         <a href="../../index.html">
@@ -21,28 +20,21 @@
         </a>
 
         <div id="Container">
-            <a href="catalogSala.html" class="sectionHeader1">Abonamente</a>
-            <a href="catalogMancare.html" class="sectionHeader2">Catalog</a>
+            <a href="../Catalog/catalogSala.html" class="sectionHeader1">Abonamente</a>
+            <a href="../Catalog/catalogMancare.html" class="sectionHeader2">Catalog</a>
         </div>
     </header>
 
-    <!--Produs-->
-    <div id="produsContainer">
-        <img id="produsImg">
-        <div id="textContainer2">
-            <h1 id="TitluProdus"></h1>
-            <p id="descriereProdus"></p>
-            
-            <div id="pretContainer">
-                    <div id="pContainer">
-                        <h1 id="pretVechi">39,99 RON</h1>
-                        <div id="reducereContainer">
-                            <h1 id="reducereText">-20%</h1>
-                        </div>
-                    </div>
-                    <h1 id="pretNou">39,99 RON</h1>  
-                </div>
-        </div>
+    <div id="cardContainer">
+        <a id="sala" href="../Catalog/catalogSala.html">
+            <img id="salaImg" src="../../assets/gym3.webp">
+            <h1 id="title">Sala</h1>
+        </a>
+    
+        <a id="mancare" href="../Catalog/catalogMancare.html">
+            <img id="mancareImg" src="../../assets/mancare.webp">
+            <h1 id="title">Mancare</h1>
+        </a>
     </div>
 
     <!--Footer-->
@@ -62,14 +54,14 @@
             </div>
 
             <div id="footerSection">
-                <a href="" id="textFooter">
+                <a href="../Catalog/catalogMancare.html" id="textFooter">
                     <h3>Produse</h3>
                     <h4 id="text3">Batoane</h4>
                     <h4 id="text3">Shakeuri</h4>
                     <h4 id="text3">Mancare</h4>
                 </a>
                 
-                <a href="" id="textFooter">
+                <a href="../Catalog/catalogSala.html" id="textFooter">
                     <h3>Planuri</h3>
                     <h4 id="text3">Esential</h4>
                     <h4 id="text3">Pro</h4>
@@ -79,11 +71,13 @@
         </div>
 
         <div id="footerSMContainer">
-            <img loading="lazy" id="footerMedia" src="../../assets/socialmedia/instagram.webp">
-            <img loading="lazy" id="footerMedia" src="../../assets/socialmedia/github.webp">
+            <a href="https://www.instagram.com/nutri_pro34/">
+                <img loading="lazy" id="footerMedia" src="assets/socialmedia/instagram.webp">
+            </a>
+            <a href="https://github.com/BogdanLeitan/nutripro">
+                <img loading="lazy" id="footerMedia" src="assets/socialmedia/github.webp">
+            </a>
         </div>
     </footer>
-
-    <script src="../Homepage/generareHTML.js"></script>
 </body>
 </html>

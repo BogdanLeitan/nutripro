@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../assets/Gilroy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+  background-color: black;
+  font-family: 'Gilroy', sans-serif;
+  margin: 0px;
+}
+
+#produsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  gap: 70px;
+  margin-top: 50px;
+}
+
+#produsImg{
+  width: 30em;
+}
+
+#TitluProdus{
+  color: #8c52ff;
+  font-size: 3.5em;
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+#descriereProdus{
+  text-align: justify;
+  font-size: 1em;
+  width: 500px;
+  color: white;
+}
+
+#pretContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#reducereContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  border-radius: 15px;
+  background: #5CE1E6;
+  background: linear-gradient(90deg, #5ce1e6 0%, #8c52ff 64%);
+}
+
+#reducereText{
+  font-size: 1.5em;
+  color: white;
+}
+
+#pretVechi{
+  text-decoration: line-through;
+  color: #696969;
+  font-size: 3em;
+  margin: 0px;
+}
+
+#pretNou{
+  margin: 0px;
+  font-size: 3em;
+  color: #8c52ff;
+}
+
+#pContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+@media(max-width: 650px){
+  #textContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #produsImg{
+    width: 18em;
+  }
+  #TitluProdus{
+    font-size: 2em;
+    text-align: center;
+    width: 350px;
+  }
+  #descriereProdus{
+    width: 250px;
+  }
+
+  #reducereContainer{
+    width: 70px;
+    height: 30px;
+  }
+
+  #reducereText{
+    font-size: 1em;
+  }
+
+  #pretVechi{
+    font-size: 2em;
+  }
+
+  #pretNou{
+    font-size: 2em;
+  }
+}

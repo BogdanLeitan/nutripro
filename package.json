@@ -7,9 +7,15 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "copy:assets": "cpx \"src/**/*.{png,jpg,html,css}\" dist",
+    "build": "npm run compile && npm run copy:assets"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0"
   }
 }
